@@ -1,1 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f2">
+    <title>Attendly | Online Attendance System</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #17231e;
+            background: #f5f7f2;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 32px 20px;
+        }
+
+        main {
+            width: min(100%, 680px);
+            padding: clamp(28px, 7vw, 56px);
+            border: 1px solid #e1e8de;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0 24px 70px rgb(23 35 30 / 8%);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #17231e;
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+        }
+
+        .brand-mark {
+            display: grid;
+            width: 34px;
+            height: 34px;
+            place-items: center;
+            border-radius: 10px;
+            background: #1d6b4c;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .eyebrow {
+            margin: 42px 0 12px;
+            color: #1d6b4c;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(36px, 7vw, 54px);
+            letter-spacing: -0.06em;
+            line-height: 1.08;
+        }
+
+        .intro {
+            margin: 18px 0 0;
+            color: #59665f;
+            font-size: 17px;
+            line-height: 1.65;
+        }
+
+        .notice {
+            margin-top: 30px;
+            padding: 18px 20px;
+            border: 1px solid #e5e9d8;
+            border-radius: 12px;
+            background: #fafbf5;
+            color: #4b574e;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+
+        .notice strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #26372d;
+        }
+
+        footer {
+            margin-top: 28px;
+            color: #78827b;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="brand"><span class="brand-mark">a.</span><span>attendly</span></div>
+        <p class="eyebrow">ONLINE ATTENDANCE SYSTEM</p>
+        <h1>Every class.<br>Counted.</h1>
+        <p class="intro">A clearer view of attendance for the people who teach and the students who show up.</p>
+        <section class="notice" aria-label="Hosting information">
+            <strong>The app needs a Django server to sign in.</strong>
+            This page is hosted on GitHub Pages, which serves static files only. The attendance system uses Django and a database, so its sign-in and attendance features are not available here. Deploy the Django project to a Python-capable web host to use the full application.
+        </section>
+        <footer>Online Attendance System · Secure access for your institution</footer>
+    </main>
+</body>
+</html>
 
